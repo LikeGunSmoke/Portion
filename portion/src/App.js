@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Main from './Main.js';
 import SignUp from './SignUp.js';
+import LoginDisplay from './LoginDisplay.js';
 
 
 const App = () => {
@@ -21,7 +22,9 @@ const App = () => {
     !access ?
     <div id='loginContainer' >
       <h1 id='logo' className='loginLogo'>Portion</h1>
-      <div id='loginDisplay'></div>
+      <div id='loginDisplay'>
+        <LoginDisplay />
+      </div>
       <form id='loginForm'>
         <input
         id='usernameInput'
