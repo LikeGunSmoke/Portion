@@ -1,0 +1,177 @@
+/* ----------------------Global----------------------------- */
+
+body {
+  background: linear-gradient(
+    #BFFBBF, #74FA74, #387A38
+  );
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+#logo {
+  background-color: #ffffff;
+  color: #387A38;
+  border-radius: 10%;
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+/* ----------------------App-------------------------------- */
+
+#loginContainer {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-areas:
+  "loginLogo loginLogo loginLogo"
+  ". loginDisplay ."
+  ". form ."
+
+}
+#loginDisplay {
+  grid-area: loginDisplay;
+  border: 2px solid black;
+}
+#loginForm {
+  grid-area: form;
+  display: grid;
+  grid-template-areas:
+  ". username username ."
+  ". password password ."
+  ". submit signUp .";
+}
+#usernameInput {
+  grid-area: username;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#passwordInput {
+  grid-area: password;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#submitBtn {
+  grid-area: submit;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 25%;
+
+}
+#signUpBtn {
+  grid-area: signUp;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 25%;
+}
+.loginLogo {
+  grid-area: loginLogo;
+  justify-self: center;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+
+/* ----------------------Main------------------------------- */
+
+#mainContainer {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 25% 50%  25%;
+  grid-template-areas:
+  ". mainLogo ."
+  ". mainDisplay ."
+  ". userInfo .";
+}
+#mainDisplay {
+  grid-area: mainDisplay;
+  border: 2px solid black;
+}
+#userInfoContainer {
+  grid-area: userInfo;
+  display: grid;
+  border: 2px solid black;
+  grid-template-areas:
+  "trees"
+  "carbon"
+}
+#treesPlanted {
+  grid-area: trees;
+  border: 2px solid black;
+}
+#carbon{
+  grid-area: carbon;
+  border: 2px solid black;
+}
+.mainLogo {
+  grid-area: mainLogo;
+  justify-self: center;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+
+
+/* -----------------------SignUp---------------------------- */
+
+#signUpContainer {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-areas:
+  ". signUpLogo ."
+  ". signUpForm ."
+  " . signUpSubmit .";
+}
+#signUpForm {
+  grid-area: signUpForm;
+  display: grid;
+  height: 50%;
+  margin-top: 25%;
+  grid-template-areas:
+  " . signUpEmail ."
+  " . signUpUser ."
+  " . signUpPass ."
+  " . signUpConfirm .";
+}
+#signUpEmail {
+  grid-area: signUpEmail;
+  justify-self: center;
+  width: 75%;
+}
+#signUpUser {
+  grid-area: signUpUser;
+  justify-self: center;
+  width: 75%;
+}
+#signUpPass {
+  grid-area: signUpPass;
+  justify-self: center;
+  width: 75%;
+}
+#signUpConfirm {
+  grid-area: signUpConfirm;
+  justify-self: center;
+  width: 75%;
+}
+#signUpSubmit {
+  grid-area: signUpSubmit;
+  justify-self: center;
+  height: 25%;
+  width: 75%;
+}
+.signUpLogo {
+  grid-area: signUpLogo;
+  justify-self: center;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
